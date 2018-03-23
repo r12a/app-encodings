@@ -333,7 +333,7 @@ function sbdisplay (enc) {
 	for (var i=0;i<enc.length;i++) {
 		characters += String.fromCodePoint(enc[i])
 		}
-	charDisplay = window.open('/apps/listcharacters?chars='+encodeURIComponent(characters), 'charDisplay')
+	charDisplay = window.open('https://r12a.github.io/apps/listcharacters?chars='+encodeURIComponent(characters), 'charDisplay')
 	charDisplay.focus()
 	}
 

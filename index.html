@@ -4,23 +4,23 @@
 <meta charset="utf-8" />
 <title>Encoding converter</title>
 <meta name="description" content="Tool to explore encoding and decoding between Unicode and other encodings." />
-<link rel="stylesheet" type="text/css"href="/style/docs.css" />
+<link rel="stylesheet" type="text/css"href="../shared/style/docs.css" />
 <link rel="stylesheet" type="text/css" href="style.css" />
-<script type="text/javascript" src="/code/boilerplate.js"></script>
+<script type="text/javascript" src="../shared/code/boilerplate.js"></script>
 <script type="text/javascript" src="indexes.js"></script>
 <script type="text/javascript" src="basics.js"></script>
-<script type="text/javascript" src="../conversion/conversionfunctions.js"></script>
+<script type="text/javascript" src="../app-conversion/conversionfunctions.js"></script>
 </head>
 
 <body class="app">
 <header>
 <div id="header-boilerplate"></div>
-<script>document.getElementById('header-boilerplate').innerHTML = bp_appHeader('/images/world.gif','Encoding converter','');</script>
+<script>document.getElementById('header-boilerplate').innerHTML = bp_appHeader('../shared/images/world.gif','Encoding converter','');</script>
 </header>
 
 <div class="section" style="margin-left:7.5%;">
 
-<script type="text/javascript" src="conversion.js"></script>
+<script src="conversion.js"></script>
 
   <div class="column" id="encodingcolumn">
   <form action="none" onsubmit="encode(convertAllEscapes(document.getElementById('uChar').value)); return false;">
@@ -310,7 +310,7 @@ show all the characters in: <select onChange="showEncoding(this.value)">
     <h2 class="flush">Related links</h2>
     <p><a target="_blank" href="https://encoding.spec.whatwg.org/">Encoding spec</a></p>
     <p><a target="_blank" href="/uniview/">UniView</a></p>
-    <p><a target="_blank" href="/apps/conversion/">Unicode code converter</a></p>
+    <p><a target="_blank" href="/app-conversion/">Unicode code converter</a></p>
   </div>
 </aside>
 
@@ -329,8 +329,11 @@ show all the characters in: <select onChange="showEncoding(this.value)">
 
 </div>
 
-<div class="smallprint"><span id="version">First published  3 Dec 2015.  This version <span id="version-info"> 
-<!-- #BeginDate format:IS1m -->2016-06-21  13:48<!-- #EndDate --> 
-  </span> GMT. &nbsp;&bull;&nbsp; Copyright <a href="mailto:r12a@w3.org">r12a@w3.org</a>. Licence <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC-By</a>.</span></div>
+<div class="smallprint"><span id="version">
+See <a href="https://github.com/r12a/app-encodings/commits/gh-pages">recent changes</a>.
+Make a <a href="https://github.com/r12a/app-encodings/issues/new">comment</a>. 
+Licence <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC-By</a> © <a href="mailto:r12a@w3.org">r12a</a> 
+</span>
+</div>
 </body>
 </html>
